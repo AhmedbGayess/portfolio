@@ -43,7 +43,7 @@ app.use("/api/messages", messages);
 app.use("/api/projects", projects);
 app.use("/api/uploads", uploads);
 
-const host = process.env.HOST || "127.0.0.1";
+const host = process.env.ORIGIN_PATH || "127.0.0.1";
 const port = process.env.NUXT_PORT || 3000;
 
 app.set("port", port);
