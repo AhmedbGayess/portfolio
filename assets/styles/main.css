@@ -1,0 +1,25 @@
+body {
+  font-family: 'Quicksand', sans-serif; 
+}
+
+a {
+  color: #000;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #000;  
+}
+
+.fade-enter-acive, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.form-control:focus {
+  border-color: #3AB982;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #3AB982;
+}

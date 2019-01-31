@@ -1,0 +1,71 @@
+<template>
+  <div>
+    <h1 class="mb-5">What others say about me</h1>
+    <testimonial v-for="(testimonial, i) in testimonials" :key="i" :testimonial="testimonial"></testimonial>
+  </div>
+</template>
+
+<script>
+import Testimonial from "./Testimonial";
+export default {
+  name: "TestimonialsList",
+  components: {
+    Testimonial
+  },
+  data() {
+    return {
+      testimonials: [
+        {
+          author: "Amenallah Hsoumi",
+          description: "Full-Stack Web Developer",
+          testimonial:
+            "I've known Ahmed since the beginning of 2018 when he just started learning to code, and he was capable of learning programming and web development form scratch in less than a year. He's a proactive self-taught developer capable of building fully functioning web apps. I since then collaborated with him on some projects and I still plan on collaborating with him in the future.",
+          linkedin: "https://www.linkedin.com/in/amenallah-hsoumi/",
+          twitter: "https://twitter.com/LazyFatArrow",
+          instagram: "",
+          website: "http://www.amenallah.com"
+        },
+        {
+          author: "Alejandro Sierra",
+          description: "Front-End Web Developer",
+          testimonial:
+            "Ahmed is one of the most professional people that i know. He has helped me when i needed help the most. His knowledge of web development and willingness to learn and improve new things is what sets him apart. Living in the U.S i needed someone with knowledge of React.js to help with a project. He responds quick to answer questions and help out. He uses best industry practices on all the technologies that he knows. Ahmed is definitely the person to go to with Web development practices",
+          linkedin: "https://www.linkedin.com/in/alejandro-sierra-9320a1164",
+          instagram: "https://www.instagram.com/minimalmvnt/",
+          website: "http://www.minimalmvnt.com/"
+        }
+      ]
+    };
+  }
+};
+</script>
+
+<style scoped>
+.about-me {
+  font-size: 19px;
+  text-align: justify;
+}
+
+h1 {
+  overflow: hidden;
+  text-align: center;
+}
+h1:before,
+h1:after {
+  background-color: #333;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+</style>
