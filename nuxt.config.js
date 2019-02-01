@@ -77,9 +77,5 @@ module.exports = {
   },
   env: {
     originPath: process.env.ORIGIN_PATH || "http://localhost:3000"
-  },
-  server: {
-    port: 8000, 
-    host: '0.0.0.0',
   }
 }
