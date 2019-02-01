@@ -1,5 +1,6 @@
 export default {
   state: {
+    posts: [],
     post: {}
   },
   mutations: {

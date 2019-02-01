@@ -30,8 +30,6 @@ export default {
           description: "Front-End Web Developer",
           testimonial:
             "Ahmed is one of the most professional people that i know. He has helped me when i needed help the most. His knowledge of web development and willingness to learn and improve new things is what sets him apart. Living in the U.S i needed someone with knowledge of React.js to help with a project. He responds quick to answer questions and help out. He uses best industry practices on all the technologies that he knows. Ahmed is definitely the person to go to with Web development practices",
-          linkedin: "https://www.linkedin.com/in/alejandro-sierra-9320a1164",
-          instagram: "https://www.instagram.com/minimalmvnt/",
           website: "http://www.minimalmvnt.com/"
         }
       ]

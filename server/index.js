@@ -4,6 +4,7 @@ const { Nuxt, Builder } = require("nuxt");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
+const cors = require("cors");
 const user = require("./routes/user");
 const posts = require("./routes/posts");
 const comments = require("./routes/comments");
@@ -16,6 +17,9 @@ const app = express();
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// cors middleware
+app.use(cors());
 
 // DB config
 const { mongoURI } = require("./config/keys");
