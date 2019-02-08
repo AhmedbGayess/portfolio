@@ -16,7 +16,7 @@ export default {
     login({ commit }, userData) {
       return this.$axios.$post("/user", userData).then(data => {
         commit("SET_TOKEN", data.token);
-        Cookie.set("token", data.token);
+        Cookie.set("token", data.token, { expires: 1 });
         this.$axios.defaults.headers.common["Authorization"] = data.token;
       });
     },
@@ -27,7 +27,7 @@ export default {
   },
   getters: {
     isAuthenticated(state) {
-      return state.token !== null;
+      return state.token;
     }
   }
 };

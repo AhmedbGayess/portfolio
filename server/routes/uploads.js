@@ -1,11 +1,12 @@
 const express = require("express");
+const passport = require("passport");
 const upload = require("../multer/storage");
 const fs = require("fs");
 
 const router = express.Router();
 
 // Upload an image
-router.post("/", (req, res) => {
+router.post("/", passport.authenticate("jwt", {session: false}), (req, res) => {
   upload(req, res, err => {
     if (err) {
       res.json({ err: err });
@@ -20,7 +21,7 @@ router.post("/", (req, res) => {
 });
 
 // Delete image
-router.delete("/:filename", (req, res) => {
+router.delete("/:filename", passport.authenticate("jwt", {session: false}), (req, res) => {
   try {
     const path = "./uploads/" + req.params.filename;
     fs.unlinkSync(path);

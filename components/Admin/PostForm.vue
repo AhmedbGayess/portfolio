@@ -86,7 +86,7 @@ export default {
       };
       if (this.$route.path.includes("edit_posts")) {
         this.$store
-          .dispatch("editPost", postData)
+          .dispatch("editPost", {id: this.$route.params.id, updates: postData})
           .then(() => this.$router.push("/admin/posts"));
       } else {
         this.$store

@@ -48,9 +48,9 @@ module.exports = {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/font-awesome',
-    // ['@nuxtjs/google-analytics', {
-    //   id: process.env.ANALYTICS
-    // }]
+    ['@nuxtjs/google-analytics', {
+      id: process.env.ANALYTICS
+    }]
   ],
   /*
   ** Axios module configuration

@@ -14,8 +14,8 @@ export default {
       state.posts.unshift(post);
     },
     EDIT_POST(state, editedPost) {
-      const postToEdit = state.posts.find(post => post._id === editedPost.id);
-      postToEdit = editedPost;
+      const postIndex = state.posts.findIndex(post => post._id === editedPost.id);
+      state.posts[postIndex] = editedPost;
     },
     DELETE_POST(state, id) {
       state.posts = state.posts.filter(post => post._id !== id);

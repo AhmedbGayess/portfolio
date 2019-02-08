@@ -8,10 +8,10 @@ export default {
       state.projects.unshift(project);
     },
     EDIT_PROJECT(state, project) {
-      const projectToEdit = state.projects.find(
+      const projectIndex = state.projects.findIndex(
         project => project._id === project.id
       );
-      projectToEdit = project;
+      state.projects[projectIndex] = project;
     },
     DELETE_PROJECT(state, id) {
       state.projects = state.projects.filter(project => project._id !== id);

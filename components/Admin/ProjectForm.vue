@@ -112,7 +112,7 @@ export default {
         liveDemo: this.liveDemo
       };
       if (this.$route.path.includes("edit_project")) {
-        this.editProject(project).then(() =>
+        this.editProject({id: this.$route.params.id, updates: project}).then(() =>
           this.$router.push("/admin/portfolio")
         );
       } else {
