@@ -26,6 +26,16 @@ export default {
           website: "http://www.amenallah.com"
         },
         {
+          author: "Melissa Ortiz",
+          description: "Full-Stack Web Developer",
+          testimonial:
+            "I’ve known Ahmed since early 2018 and in that time, he has shown tremendous growth in his technical and communication skills. He has proven his willingness to learn new technologies and stay flexible depending on the requirements for the client. He is great at researching and implementing best practices and stays up to date with updates in the industry. He takes direction well and is easy to work with. I highly recommend Ahmed for your next project.",
+          linkedin: "https://www.linkedin.com/in/melissa-ortiz/",
+          twitter: "https://twitter.com/thetechielatina",
+          instagram: "",
+          website: ""
+        },
+        {
           author: "Alejandro Sierra",
           description: "Front-End Web Developer",
           testimonial:
