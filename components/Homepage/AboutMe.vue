@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 img {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .content {
